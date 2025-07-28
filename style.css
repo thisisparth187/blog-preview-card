@@ -1,0 +1,118 @@
+ @font-face {
+     font-family: 'Figtree Italic';
+     /* Give your font a name */
+     src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype')
+ }
+
+
+ @font-face {
+     font-family: 'Figtree Normal';
+     /* Give your font a name */
+     src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype')
+ }
+
+ @font-face {
+     font-family: 'Figtree Medium';
+     /* Give your font a name */
+     src: url('./assets/fonts/static/Figtree-Medium.ttf') format('truetype')
+ }
+
+ @font-face {
+     font-family: 'Figtree Extra Bold';
+     /* Give your font a name */
+     src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype')
+ }
+
+
+ :root {
+     --bg-color: #F6D050;
+     font-family: 'Figtree Normal', sans-serif;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: var(--bg-color);
+ }
+
+ .root {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .card {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+
+     width: 100%;
+     max-width: 24rem;
+     height: 32.625rem;
+     margin: 0 1rem;
+     padding: 1.5rem;
+     border: 2px solid black;
+     background-color: #ffffff;
+     border-radius: 1em;
+     gap: 1.5rem;
+     box-shadow: 0.5rem 0.5rem;
+
+ }
+
+ .content {}
+
+ .card-image {
+     width: 100%;
+     max-width: 24rem;
+     border-radius: 0.625rem;
+ }
+
+ .category {
+     padding: 0.25rem 0.75rem;
+     font-size: small;
+     background-color: var(--bg-color);
+     display: inline-block;
+     font-family: 'Figtree Extra Bold', sans-serif;
+     border-radius: 0.25em;
+ }
+
+ .published-date {
+     font-size: 0.875rem;
+     font-family: 'Figtree Medium', sans-serif;
+ }
+
+ .title {
+     font-family: 'Figtree Extra Bold', sans-serif;
+     font-size: 1.5rem;
+ }
+
+ .description {
+     font-family: 'Figtree Medium', sans-serif;
+     font-size: 1rem;
+     color: #6B6B6B;
+ }
+
+ .author {
+     display: flex;
+     width: 100%;
+     align-items: center;
+     gap: 0.75rem;
+ }
+
+ .userpic {
+     height: 2rem;
+     width: 2rem;
+ }
+
+ .authorname {
+     font-family: 'Figtree Extra Bold', sans-serif;
+ }
+
+ .title:hover {
+     color: #F6D050;
+
+     cursor: pointer;
+ }
